@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href = "팀프로젝트.css" rel = "stylesheet"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src = "팀프로젝트.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Amatic+SC:wght@400;700&family=Dosis:wght@200&display=swap" rel="stylesheet">
+        <link rel = "favicon" href = "favicon.ico" type = "image/x-icon" sizes = "16x16" />
+        <title>Brick Game</title>
+    </head>
+
+    <body>
+        <!-- 레벨 선택 화면-->
+        <header>
+            <img src = "headerImg.png" id = "headerImg"  class="flip-in-hor-bottom"/>
+        </header>
+
+        <img src = "side1.png" id = "side1" />
+        <img src = "side2.png" id = "side2" />
+
+        <div id = "gamePage"></div>
+        <div id = "levelSelect" class = "gameElement">
+        <div id = "start"></div>
+
+                <img id = "startbgImg" src = "main_start.png" />
+                <img id = "startButtonImg" src = "start_button.png" class="pulsate-bck"/>
+                <img src = "cover.png" id = "coverImg" class="fade-out"/>
+                <div id="bgmPlay"></div>
+                <img id="bgmPlayImg" src="bgmON.png">
+                <div id="bgmStop"></div>
+                <img id="bgmStopImg" src="bgmOFF.png">
+
+                <img id = "pickbgImg" class = "pick" src = "main_pick.png" />
+                <img id = "goButtonImg" class = "pick pulsate-bck" src = "go_button.png"> <!--###-->
+
+                <img id = "villageImg" class = "pick" src = "village_pick.png" />
+                <img id = "campImg" class = "pick" src = "camp_pick.png" />
+                <img id = "graveImg" class = "pick" src = "grave_pick.png" />
+
+                <img id = "easyImg" class = "pick" src = "easy_button.png" />
+                <img id = "normalImg" class = "pick" src = "normal_button.png" />
+                <img id = "hardImg" class = "pick" src = "hard_button.png" />
+
+                <img id = "redImg" class = "pick" src = "red_pick.png" />
+                <img id = "greenImg" class = "pick" src = "green_pick.png" />
+                <img id = "blueImg"  class = "pick" src = "blue_pick.png" />
+
+                <img id = "redIfImg" class = "pick" src = "red_info.png" />
+                <img id = "greenIfImg" class = "pick" src = "green_info.png" />
+                <img id = "blueIfImg"  class = "pick" src = "blue_info.png" />
+
+                <img id = "mapSelectvil" class = "pick" src = "map_box.png" />
+                <img id = "mapSelectcamp" class = "pick" src = "map_box.png" />
+                <img id = "mapSelectgrave" class = "pick" src = "map_box.png" />
+
+                <div id = "village"></div>
+                <div id = "camp"></div>
+                <div id = "graveyard"></div>
+                <div id = "playGame"></div>
+
+                <img id = "chSelectred" class = "pick" src = "ch_box.png" />
+                <img id = "chSelectgre" class = "pick" src = "ch_box.png" />
+                <img id = "chSelectblu" class = "pick" src = "ch_box.png" />
+
+                <div id = "red"></div>
+                <div id = "green"></div>
+                <div id = "blue"></div>
+
+                <div id = "go" class = "pick"></div>
+            </div>
+            
+            <canvas id="myCanvas" width="1080" height="720" class = "gameElement"></canvas>
+            <img src = "watereffect2.png" id = "waterEffect2" />
+            
+            <img src = "win.png" id = "win" class = "clear" />
+            <img src = "lose.png" id = "lose" />
+            <img src = "clearbg.png" id = "clearbg" class = "clear" />
+            <img src = "continue.png" id  = "continue" class = "clear" />
+
+            <div id = "name" class = "gameResult">NAME</div>
+            <div id = "names" class = "gameResultS"></div>
+            <div id = "score" class = "gameResult">SCORE</div>
+            <div id = "scores" class = "gameResultS"></div>
+            <div id = "time" class = "gameResult">TIME</div>
+            <div id = "times" class = "gameResultS"></div>
+            <div id = "rank" class = "gameResult">RANK</div>
+            <div id = "ranks" class = "gameResultS"></div>
+
+            <img id = "rankS" src = "rankS.png" />
+            <img id = "rankA" src = "rankA.png" />
+            <img id = "rankB" src = "rankB.png" />
+            <img id = "rankC" src = "rankC.png" />
+            <img id = "rankD" src = "rankD.png" />
+            
+            <img id = "iceCastle" src = "icecastle.png" />
+            <img id = "bazzi" src="bazzi.png"/>
+    </body>
+</html>
